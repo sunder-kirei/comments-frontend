@@ -27,11 +27,11 @@
   border: none;
   font-size: 1rem;
   background-color: transparent;
-  background-color: hsl(223deg, 19%, 93%);
+  background-color: hsl(240deg, 100%, 96%);
   width: 2em;
   height: 2em;
   font-weight: 700;
-  color: hsl(239deg, 57%, 85%);
+  color: hsl(211deg, 10%, 45%);
   cursor: pointer;
 }
 .comment .counter button:hover {
@@ -113,10 +113,10 @@
   cursor: pointer;
 }
 .comment .main .header .reply:hover {
-  color: hsl(239deg, 57%, 85%);
+  color: hsl(240deg, 100%, 96%);
 }
 .comment .main .header .reply:hover svg path {
-  fill: hsl(239deg, 57%, 85%);
+  fill: hsl(240deg, 100%, 96%);
 }
 .comment .main .header .reply svg {
   width: 1em;
@@ -155,10 +155,10 @@
   cursor: pointer;
 }
 .comment .main .header .edit-delete #edit:hover {
-  color: hsl(239deg, 57%, 85%);
+  color: hsl(240deg, 100%, 96%);
 }
 .comment .main .header .edit-delete #edit:hover svg path {
-  fill: hsl(239deg, 57%, 85%);
+  fill: hsl(240deg, 100%, 96%);
 }
 .comment .main .comment-body-input {
   margin-bottom: 1em;
@@ -212,5 +212,5 @@
   cursor: pointer;
 }
 .comment .main #update:active {
-  background-color: hsl(239deg, 57%, 85%);
+  background-color: hsl(240deg, 100%, 96%);
 }/*# sourceMappingURL=style.css.map */

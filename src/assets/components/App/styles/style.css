@@ -10,7 +10,7 @@ html ::-webkit-scrollbar {
 }
 
 main {
-  background-color: hsl(223deg, 19%, 93%);
+  background-color: hsl(240deg, 100%, 96%);
   display: flex;
   align-items: center;
   justify-content: center;
