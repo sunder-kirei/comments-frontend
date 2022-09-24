@@ -1,0 +1,56 @@
+@import "../../../../config/colors.scss";
+
+.overlay {
+  position: absolute;
+  pointer-events: all;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(212, 24%, 26%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal {
+    background-color: $color-white;
+    border-radius: 0.5em;
+    height: 15em;
+    width: 25em;
+    padding: 2em;
+    .heading {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-bottom: 1em;
+      color: $color-dark-blue;
+    }
+    .main {
+      font-size: 1em;
+      font-weight: 400;
+      color: $color-gray-blue;
+      margin-bottom: 1.5em;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+      width: 100%;
+      button {
+        font-size: $font;
+        height: 3em;
+        border-radius: 0.5em;
+        background-color: transparent;
+        border: none;
+        color: $color-gray;
+        cursor: pointer;
+      }
+      #delete {
+        background-color: $color-soft-red;
+      }
+      #cancel {
+        background-color: $color-gray-blue;
+      }
+    }
+  }
+}
+
+.display {
+  display: none;
+}

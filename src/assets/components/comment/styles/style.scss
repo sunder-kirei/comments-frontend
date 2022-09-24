@@ -1,0 +1,213 @@
+@import "../../../../config/colors.scss";
+
+.comment {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: $color-white;
+  margin-bottom: 1em;
+  .counter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin-right: 1em;
+    button {
+      border: none;
+      font-size: 1rem;
+      background-color: transparent;
+      background-color: $color-gray;
+      width: 2em;
+      height: 2em;
+      font-weight: 700;
+      color: $color-gray-blue-light;
+      &:hover {
+        color: $color-moderate-blue;
+      }
+      cursor: pointer;
+      &:nth-child(1) {
+        border-top-right-radius: 0.5em;
+        border-top-left-radius: 0.5em;
+      }
+      &:nth-child(3) {
+        border-bottom-right-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+      }
+    }
+    .score {
+      height: 2em;
+      display: grid;
+      place-items: center;
+      width: 100%;
+      font-weight: 700;
+      color: $color-moderate-blue;
+      background-color: $color-gray;
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .header {
+      display: flex;
+      align-items: center;
+      height: 2em;
+      margin-bottom: 1em;
+      img {
+        object-fit: contain;
+        width: 2em;
+        margin-right: 1em;
+        cursor: pointer;
+      }
+      .user-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        margin-right: 1em;
+        color: $color-dark-blue;
+        font-weight: 700;
+        &:hover {
+          color: $color-moderate-blue;
+        }
+        cursor: pointer;
+        .tag {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 0.5em;
+          height: 1.5em;
+          padding-bottom: 0.1em;
+          border-radius: 0.2em;
+          width: 2.5em;
+          text-align: center;
+          color: $color-gray-light;
+          background-color: $color-moderate-blue;
+          font-weight: 500;
+        }
+      }
+      .created {
+        font-weight: 500;
+        color: $color-gray-blue;
+      }
+      .reply {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        color: $color-moderate-blue;
+        cursor: pointer;
+        &:hover {
+          color: $color-gray-blue-light;
+          svg {
+            path {
+              fill: $color-gray-blue-light;
+            }
+          }
+        }
+        svg {
+          width: 1em;
+          height: 1em;
+          object-fit: fill;
+          margin-right: 0.5em;
+        }
+      }
+      .edit-delete {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        font-weight: 700;
+        svg {
+          width: 1em;
+          margin-right: 0.2em;
+        }
+        #delete {
+          display: flex;
+          align-items: center;
+          margin-right: 1em;
+          color: $color-soft-red;
+          cursor: pointer;
+          &:hover {
+            color: $color-pale-red;
+            svg {
+              path {
+                fill: $color-pale-red;
+              }
+            }
+          }
+        }
+        #edit {
+          display: flex;
+          align-items: center;
+          color: $color-moderate-blue;
+          cursor: pointer;
+          &:hover {
+            color: $color-gray-blue-light;
+            svg {
+              path {
+                fill: $color-gray-blue-light;
+              }
+            }
+          }
+        }
+      }
+    }
+    .comment-body-input {
+      margin-bottom: 1em;
+      textarea {
+        height: 7em;
+        border-radius: 0.5em;
+        cursor: pointer;
+        overflow-y: auto;
+        resize: none;
+        width: 100%;
+        border: 2px solid $color-gray;
+        margin-right: 1em;
+        font-size: $font;
+        padding-block: 1em;
+        padding-inline: 2em;
+        color: $color-dark-blue;
+        font-weight: 400;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        &:hover {
+          border: 2px solid $color-moderate-blue;
+        }
+        &:focus {
+          outline: none;
+          border: 2px solid $color-moderate-blue;
+        }
+      }
+    }
+    .comment-body {
+      font-weight: 400;
+      color: $color-gray-blue;
+      span {
+        color: $color-moderate-blue;
+        font-weight: 700;
+        &::before {
+          content: "@";
+        }
+      }
+    }
+    #update {
+      border: none;
+      font-size: $font;
+      width: 7em;
+      margin-left: auto;
+      height: 3em;
+      border-radius: 0.5em;
+      background-color: $color-moderate-blue;
+      color: $color-gray-light;
+      font-weight: 700;
+      cursor: pointer;
+      &:active {
+        background-color: $color-gray-blue-light;
+      }
+    }
+  }
+}

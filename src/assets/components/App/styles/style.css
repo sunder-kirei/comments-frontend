@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  background-color: hsl(223deg, 19%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .container {
+  max-width: 700px;
+  width: 80%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 330px) {
+  :root {
+    font-size: 6px;
+  }
+}/*# sourceMappingURL=style.css.map */

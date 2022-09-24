@@ -1,0 +1,63 @@
+@import "../../../../config/colors.scss";
+
+.reply-input {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: $color-white;
+  img {
+    width: 3em;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 1em;
+  }
+  .main {
+    width: 100%;
+    min-height: 7em;
+    display: flex;
+    align-items: center;
+    textarea {
+      height: 100%;
+      border-radius: 0.5em;
+      cursor: pointer;
+      overflow-y: auto;
+      resize: none;
+      width: 100%;
+      border: 1px solid $color-moderate-blue;
+      margin-right: 1em;
+      font-size: $font;
+      padding-block: 1em;
+      padding-inline: 2em;
+      color: $color-dark-blue;
+      font-weight: 400;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &:hover {
+        border: 2px solid $color-moderate-blue;
+      }
+      &:focus {
+        outline: none;
+        border: 2px solid $color-moderate-blue;
+      }
+    }
+    button {
+      border: none;
+      font-size: $font;
+      width: 7em;
+      margin-left: auto;
+      align-self: flex-start;
+      height: 3em;
+      border-radius: 0.5em;
+      background-color: $color-moderate-blue;
+      color: $color-gray-light;
+      font-weight: 700;
+      cursor: pointer;
+      &:active {
+        background-color: $color-gray-blue-light;
+      }
+    }
+  }
+}

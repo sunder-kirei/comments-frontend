@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.comment {
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1em;
+}
+.comment .counter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  margin-right: 1em;
+}
+.comment .counter button {
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  background-color: hsl(223deg, 19%, 93%);
+  width: 2em;
+  height: 2em;
+  font-weight: 700;
+  color: hsl(239deg, 57%, 85%);
+  cursor: pointer;
+}
+.comment .counter button:hover {
+  color: hsl(238deg, 40%, 52%);
+}
+.comment .counter button:nth-child(1) {
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+.comment .counter button:nth-child(3) {
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+.comment .counter .score {
+  height: 2em;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  font-weight: 700;
+  color: hsl(238deg, 40%, 52%);
+  background-color: hsl(223deg, 19%, 93%);
+}
+.comment .main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.comment .main .header {
+  display: flex;
+  align-items: center;
+  height: 2em;
+  margin-bottom: 1em;
+}
+.comment .main .header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 2em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+.comment .main .header .user-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  margin-right: 1em;
+  color: hsl(212deg, 24%, 26%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.comment .main .header .user-name:hover {
+  color: hsl(238deg, 40%, 52%);
+}
+.comment .main .header .user-name .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5em;
+  height: 1.5em;
+  padding-bottom: 0.1em;
+  border-radius: 0.2em;
+  width: 2.5em;
+  text-align: center;
+  color: hsl(228deg, 33%, 97%);
+  background-color: hsl(238deg, 40%, 52%);
+  font-weight: 500;
+}
+.comment .main .header .created {
+  font-weight: 500;
+  color: hsl(211deg, 10%, 45%);
+}
+.comment .main .header .reply {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: hsl(238deg, 40%, 52%);
+  cursor: pointer;
+}
+.comment .main .header .reply:hover {
+  color: hsl(239deg, 57%, 85%);
+}
+.comment .main .header .reply:hover svg path {
+  fill: hsl(239deg, 57%, 85%);
+}
+.comment .main .header .reply svg {
+  width: 1em;
+  height: 1em;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-right: 0.5em;
+}
+.comment .main .header .edit-delete {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-weight: 700;
+}
+.comment .main .header .edit-delete svg {
+  width: 1em;
+  margin-right: 0.2em;
+}
+.comment .main .header .edit-delete #delete {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  color: hsl(358deg, 79%, 66%);
+  cursor: pointer;
+}
+.comment .main .header .edit-delete #delete:hover {
+  color: hsl(357deg, 100%, 86%);
+}
+.comment .main .header .edit-delete #delete:hover svg path {
+  fill: hsl(357deg, 100%, 86%);
+}
+.comment .main .header .edit-delete #edit {
+  display: flex;
+  align-items: center;
+  color: hsl(238deg, 40%, 52%);
+  cursor: pointer;
+}
+.comment .main .header .edit-delete #edit:hover {
+  color: hsl(239deg, 57%, 85%);
+}
+.comment .main .header .edit-delete #edit:hover svg path {
+  fill: hsl(239deg, 57%, 85%);
+}
+.comment .main .comment-body-input {
+  margin-bottom: 1em;
+}
+.comment .main .comment-body-input textarea {
+  height: 7em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  overflow-y: auto;
+  resize: none;
+  width: 100%;
+  border: 2px solid hsl(223deg, 19%, 93%);
+  margin-right: 1em;
+  font-size: 16px;
+  padding-block: 1em;
+  padding-inline: 2em;
+  color: hsl(212deg, 24%, 26%);
+  font-weight: 400;
+}
+.comment .main .comment-body-input textarea::-webkit-scrollbar {
+  display: none;
+}
+.comment .main .comment-body-input textarea:hover {
+  border: 2px solid hsl(238deg, 40%, 52%);
+}
+.comment .main .comment-body-input textarea:focus {
+  outline: none;
+  border: 2px solid hsl(238deg, 40%, 52%);
+}
+.comment .main .comment-body {
+  font-weight: 400;
+  color: hsl(211deg, 10%, 45%);
+}
+.comment .main .comment-body span {
+  color: hsl(238deg, 40%, 52%);
+  font-weight: 700;
+}
+.comment .main .comment-body span::before {
+  content: "@";
+}
+.comment .main #update {
+  border: none;
+  font-size: 16px;
+  width: 7em;
+  margin-left: auto;
+  height: 3em;
+  border-radius: 0.5em;
+  background-color: hsl(238deg, 40%, 52%);
+  color: hsl(228deg, 33%, 97%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.comment .main #update:active {
+  background-color: hsl(239deg, 57%, 85%);
+}/*# sourceMappingURL=style.css.map */
